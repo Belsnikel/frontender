@@ -1,0 +1,33 @@
+.steps {
+  &__heading {
+    margin-bottom: 66px;
+  }
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.step {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  &__number {
+    margin-right: 42px;
+    align-self: flex-start;
+    @include fontText($montserrat, 50px, 300);
+
+    text-shadow: 5px 1px 0px rgba(254, 209, 0, 1);
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    @include fontText($montserrat, 20px, 500);
+  }
+  &__text {
+    max-width: 380px;
+    @include fontText($montserrat, 16px, 400);
+    line-height: 1.5;
+  }
+}
