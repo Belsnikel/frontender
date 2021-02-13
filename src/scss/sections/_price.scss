@@ -1,0 +1,52 @@
+.price {
+    margin-bottom: 35px;
+    &__title {
+        @include fontText($montserrat, 30px, 600);
+        text-align: center;
+        margin-bottom: 15px;  
+    }
+    &__subtitle {
+        @include fontText($montserrat, 24px, 600);
+        text-align: center;
+        margin-bottom: 60px;
+    }
+  }
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    &__item {
+        max-width: 421px;
+        max-height: 579px;
+        border: 1px solid #EBEBEB;
+        margin-right: 23px;
+    }
+    &__item:nth-child(2) {
+        border: 1px solid #FED100;
+    }
+    &__title {
+        @include fontText($montserrat, 24px, 600);
+        margin-bottom: 60px;
+        text-align: center;
+        padding-top: 80px;  
+        padding-left: 65px;
+        padding-right: 65px;  
+    }
+    &__desc, &__price {
+        display: block;
+        text-align: center;
+        @include fontText($montserrat, 16px, 400);
+        color: #333333;
+        margin-bottom: 28px;
+    }
+    &__price {
+        @include fontText($montserrat, 30px, 600);
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+    &__btn {
+        margin-bottom: 78px;
+    }
+    
+}

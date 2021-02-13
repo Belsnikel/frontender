@@ -88,6 +88,13 @@ function watchFiles(params) {
     gulp.watch([path.watch.css], css)
 }
 
+function images() {
+  return src(path.src.img)
+    .pipe(dest(path.build.img))
+    .pipe(browsersync.stream());
+}
+
+
 
 function fonts() {
   src(path.src.fonts).pipe(ttf2woff()).pipe(dest(path.build.fonts));
@@ -137,7 +144,7 @@ function images() {
       .pipe(browsersync.stream());
   }
 
-let build = gulp.series(clean, gulp.parallel(css, html));
+let build = gulp.series(gulp.parallel(css, html, fonts, images));
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 

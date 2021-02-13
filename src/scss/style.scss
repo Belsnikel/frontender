@@ -7,7 +7,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1352px;
+  max-width: 1230px;
   margin: 0 auto;
   padding: 0px 20px;
 }
@@ -52,7 +52,20 @@ body {
     transform: translate(0px, 0px);
   }
 }
-
+.button-order-type2 {
+    display: block;
+    margin: 0 auto;
+    padding: 14px 75px;
+    @include fontText($montserrat, 20px, 500);
+    color: #333333;
+    background: #FED100;
+    border: 1px solid transparent;
+    transition: transform 0.1s ease-in;
+    &:hover {
+      background: #E3BB7D;
+      border: 1px solid #FF352B;
+    }
+}
 .heading {
   &__title {
     @include fontText($montserrat, 30px, 600);
@@ -65,3 +78,4 @@ body {
 @import "./sections/header";
 @import "./sections/intro";
 @import "./sections/steps";
+@import "./sections/price";

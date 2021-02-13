@@ -134,7 +134,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1352px;
+  max-width: 1230px;
   margin: 0 auto;
   padding: 0px 20px;
 }
@@ -183,6 +183,24 @@ body {
 
 .button-order:hover {
   transform: translate(0px, 0px);
+}
+
+.button-order-type2 {
+  display: block;
+  margin: 0 auto;
+  padding: 14px 75px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #333333;
+  background: #FED100;
+  border: 1px solid transparent;
+  transition: transform 0.3s ease-in;
+}
+
+.button-order-type2:hover {
+  background: #E3BB7D;
+  border: 1px solid #FF352B;
 }
 
 .heading__title {
@@ -250,7 +268,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
   font-weight: 500;
-  text-decoration: underline;
+  text-decoration: none;
   color: #333;
   cursor: pointer;
   transition: color 0.3s linear;
@@ -370,4 +388,76 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
+}
+
+.price {
+  margin-bottom: 35px;
+}
+
+.price__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.price__subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__item {
+  max-width: 421px;
+  max-height: 579px;
+  border: 1px solid #EBEBEB;
+  margin-right: 23px;
+}
+
+.card__item:nth-child(2) {
+  border: 1px solid #FED100;
+}
+
+.card__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 60px;
+  text-align: center;
+  padding-top: 80px;
+  padding-left: 65px;
+  padding-right: 65px;
+}
+
+.card__desc,
+.card__price {
+  display: block;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 28px;
+}
+
+.card__price {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.card__btn {
+  margin-bottom: 78px;
 }
